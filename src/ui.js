@@ -17,4 +17,14 @@ function capitalizeFirst(str) {
   }
 }
 
-function reverseString(str) {}
+function reverseString(str) {
+  // let variable to store new reversed string
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    // loop through string starting from the last character
+    newString += str[i];
+    // return each position of the loop to the let variable
+  }
+  return newString;
+  // return let variable
+}
