@@ -1,4 +1,4 @@
-const { sum, capitalize, capitalizeFirst } = require("./src/ui");
+const { sum, capitalize, capitalizeFirst, reverseString } = require("./src/ui");
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -16,6 +16,10 @@ test("check whether first character of a string is a number or not", () => {
 
 test("capitalize first character of a string", () => {
   expect(capitalizeFirst("london is a big city")).toBe("London is a big city");
+});
+
+test("takes a string and returns it reversed", () => {
+  expect(reverseString("my friend is hannah")).toBe("hannah si dneirf ym");
 });
 
 // Write tests for the following, and then make the tests pass!

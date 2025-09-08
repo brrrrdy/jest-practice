@@ -1,4 +1,4 @@
-module.exports = { sum, capitalize, capitalizeFirst };
+module.exports = { sum, capitalize, capitalizeFirst, reverseString };
 
 function sum(a, b) {
   return a + b;
@@ -16,3 +16,5 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1); // return str with index position 0.toUpperCase
   }
 }
+
+function reverseString(str) {}
