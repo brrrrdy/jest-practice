@@ -1,4 +1,10 @@
-const { sum, capitalize, capitalizeFirst, reverseString } = require("./src/ui");
+const {
+  sum,
+  capitalize,
+  capitalizeFirst,
+  reverseString,
+  calculator,
+} = require("./src/ui");
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -22,13 +28,32 @@ test("takes a string and returns it reversed", () => {
   expect(reverseString("my friend is hannah")).toBe("hannah si dneirf ym");
 });
 
+test("calculator add", () => {
+  expect(calculator.add(1, 2)).toBe(3);
+});
+
+test("calculator subtract", () => {
+  expect(calculator.subtract(5, 2)).toBe(3);
+});
+
+test("calculator multiply", () => {
+  expect(calculator.multiply(3, 4)).toBe(12);
+});
+
+test("calculator divide", () => {
+  expect(calculator.divide(10, 2)).toBe(5);
+});
+
+test("calculator divide by zero throws error", () => {
+  expect(() => calculator.divide(5, 0)).toThrow("Cannot divide by zero");
+});
 // Write tests for the following, and then make the tests pass!
 
 //     A capitalize function that takes a string and returns it with the first character capitalized.  🟢
 
 //     A reverseString function that takes a string and returns it reversed. 🟢
 
-//     A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation.
+//     A calculator object that contains functions for the basic operations: add, subtract, divide, and multiply. Each of these functions should take two numbers and return the correct calculation. 🟢
 
 //     A caesarCipher function that takes a string and a shift factor and returns it with each character “shifted”. Read more about how a Caesar cipher works.
 
