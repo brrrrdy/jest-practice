@@ -20,7 +20,7 @@ test("capitalize first character of a string", () => {
 
 // Write tests for the following, and then make the tests pass!
 
-//     A capitalize function that takes a string and returns it with the first character capitalized.
+//     A capitalize function that takes a string and returns it with the first character capitalized.  🟢
 
 //     A reverseString function that takes a string and returns it reversed.
 
